@@ -1,0 +1,50 @@
+body {
+	box-sizing: border-box;
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.ticket_item {
+	list-style: none;
+	padding: 2px 3px;
+	margin: 3px;
+	width: 80%;
+	border-radius: 6px;
+	background: #CCC;
+}
+.ticket_item .delete_item {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border: 1px solid rgba(0, 190, 255, 0);
+	display: inline-block;
+	line-height: 1.6em;
+	padding: 0 4px;
+}
+
+.ticket_item .delete_item:hover {
+	background: rgba(255,255,255,.2);
+	border-color:  rgba(0, 190, 255, 1);
+}
+.ticket_desc:focus {
+	border: 1px solid rgba(0, 190, 255, 1);
+	background: rgba(255,255,255,.2);
+}
+.ticket_desc {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border: 1px solid rgba(0, 190, 255, 0);
+	display: inline-block;;
+	line-height: 1.6em;
+	border-opacity: 0;
+	width: calc(100% - (.5em + 1.3em + 1px));
+	min-height: 24px;
+	padding-left: .5em;
+	transition: all .5s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+}
